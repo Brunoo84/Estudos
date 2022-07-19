@@ -1,0 +1,113 @@
+/* @media screen and (max-width: 400px){
+
+section{
+
+    background-color: black;
+    max-width: 1000px;    /*PARA LIMITAR O ESPAÇO DO CONTAINER*/
+    
+
+    }
+} */ 
+
+    
+
+
+
+/*ASTERISCO USADO PARA AFETAR TODOS OS ELEMENTOS DA PAGINA REMOVENDO A MARGIN E PADDING*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+/*CONTAINER CRIADO PARA CONTROLAR A LARGURA AUTOMATICA DO HEADER*/
+.container {
+    max-width: 1000px;
+    margin: auto;    /*PARA CENTRALIZAR O CONTAINER*/
+}
+
+header {
+    background-color: #48C5CE;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+
+.title {
+    font-size: 26px;
+}
+
+section {
+    padding: 20px;
+    background-image: url('../images/people.jpg');
+    background-size: cover; /* TAMANHO DA IMAGEM SER DO TAMANHO EXATO PARA COBRIR MINHA DIV */
+    overflow: hidden;
+}
+
+.formContainer {
+    max-width: 230px;    /*PARA LIMITAR O ESPAÇO DO CONTAINER*/
+    background-color: #FFFFFFBB;
+    padding: 20px;
+    float: right;    /*COLOCAR O CONTAINER NA DIREITA  */
+}
+
+h2 {
+    font-size: 16px;
+}
+
+.mb {
+    margin-bottom: 15px;
+}
+
+input,
+select {
+    width: 100%;
+    box-sizing: border-box;    /*PARA NAO TER DIFERENÇA DE TAMANHO EM NENHUM */
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+/*APLICAR UM ESTILO DIRECIONADO UNICAMENTE NO INPUT DE SUBMIT  */
+input[type="submit"] {
+    color: white;
+    background-color: #48C5CE;
+    font-weight: bold;    /*PESO DA FONTE  */
+}
+
+select{
+    -moz-appearance: none; /*RETIRA A APARENCIA DA SETA PADRÃO DO FORM DE CIDADE */
+    -webkit-appearance: none;  /*RETIRA A APARENCIA DA SETA PADRÃO DO FORM DE CIDADE */
+    appearance: none;  /*RETIRA A APARENCIA DA SETA PADRÃO DO FORM DE CIDADE */
+    background-image: url('../images/arrow.jpg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center; /*CENTRALIZAR A SETA NO FINAL DO FORM DE CIDADE */
+}
+
+footer{
+    background-color: #202121 ;
+    padding: 40px;
+    text-align: center;
+}
+
+.picture{
+    width: 160px;
+}
+.description{
+    color: white;
+    display: inline-block;
+    max-width: 40%;
+    margin-left: 40px;
+    text-align: left;
+    }
+.description p, .description h3{
+    margin-bottom: 20px;
+}
+.description h3{
+    font-size: 24px;
+}
